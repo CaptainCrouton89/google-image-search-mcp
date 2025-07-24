@@ -10,7 +10,12 @@
     "dev": "ts-node --esm src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 0",
     "lint": "eslint --ext .ts src/",
-    "format": "prettier --write \"src/**/*.ts\""
+    "format": "prettier --write \"src/**/*.ts\"",
+    "install-server": "tsc && chmod 755 dist/index.js && node scripts/update-config.js",
+    "install-cursor": "tsc && chmod 755 dist/index.js && node scripts/update-config.js cursor",
+    "install-desktop": "tsc && chmod 755 dist/index.js && node scripts/update-config.js desktop",
+    "install-code": "tsc && chmod 755 dist/index.js && node scripts/update-config.js code",
+    "install-mcp": "tsc && chmod 755 dist/index.js && node scripts/update-config.js mcp"
   },
   "keywords": [],
   "author": "",
